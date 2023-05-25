@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Class Assignment 01</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      
+         const card = <div style={{height:"400px",width:"300px",boxShadow:"0 0 10px black",margin:"80px auto",textAlign:"center",padding:"30px"}}>
+           <img width="100px" height="100px" style={{borderRadius:"50%"}} src="https://th.bing.com/th/id/OIP.jFnDNW0tz6KUIVsvGOFVPQHaHa?w=166&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"/>
+           <h2>Alexandra Caulea</h2>
+           <p style={{color:"#757575"}}>I enjoy drinking a cup of coffe everyday.</p>
+           <div style={{display:"flex",justifyContent:"space-evenly"}}>
+            <div >
+              <h2 style={{color:"#673AB7"}}>172</h2>
+              <p style={{color:"#757575"}}>POSTS</p>
+              </div>
+              <div>
+              <h2 style={{color:"#673AB7"}}>47</h2>
+              <p style={{color:"#757575"}}>FOLLOWERS</p>
+              </div>
+              <div>
+              <h2 style={{color:"#673AB7"}}>20</h2>
+              <p style={{color:"#757575"}}>FOLLOWING</p>
+              </div>
+            </div>
+            <div style={{display:"flex",justifyContent:"space-evenly",marginTop:"30px"}} >
+              <button style={{color:"white",backgroundColor:"#673AB7",border:"none",width:"120px",height:"40px",padding:"10px",borderRadius:"8px"}}>FOLLOW</button>
+              <button style={{color:"white",backgroundColor:"#F06292",border:"none",width:"120px",height:"40px",padding:"10px",borderRadius:"8px"}}>MESSAGE</button>
+              </div>
+          </div>
+         ReactDOM.render(card,document.getElementById("root"))
+         
+    </script>
+  </body>
+</html>
